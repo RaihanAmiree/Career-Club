@@ -1,0 +1,22 @@
+/* ==== CVDesign1 Custom Styles ==== */
+
+/* Print styles */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #cv-preview,
+  #cv-preview * {
+    visibility: visible;
+  }
+  #cv-preview {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  .input-panel,
+  .print-controls {
+    display: none !important;
+  }
+}
