@@ -10,7 +10,7 @@ import Footer from "./Components/Footer";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Services from "./Pages/Services";
-import Contact from "./Pages/Contact";
+import Explorer from "./Pages/Explorer";
 import CVSelection from "./Components/CVSelection"
 import CVDesign1 from "./Components/CVDesign1"
 import CVDesign2 from "./Components/CVDesign2"
@@ -23,6 +23,7 @@ import CareerLibrary from './Components/CareerLibrary';
 import Chatbot from "./Components/Chatbot";
 import Motivation from "./Components/Motivation"
 import Course from "./Components/Course"
+import Registration from "./Components/Registration";
 
 const App = () => {
   return (
@@ -33,7 +34,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/explorer" element={<Explorer />} />
           <Route path="*" element={<Navigate to="/" replace />} />
           <Route path="/cvselection" element={<CVSelection />} />
           <Route path="/cv1" element={<CVDesign1 />} />
@@ -47,6 +48,8 @@ const App = () => {
           <Route path="/chatbot" element={<Chatbot />} />
           <Route path="/motivation" element={<Motivation />} />
           <Route path="/course" element={<Course />} />
+          <Route path="/registration" element={<Registration />} />
+          
         </Routes>
         <Footer />
       </Router>

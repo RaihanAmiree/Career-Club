@@ -1,0 +1,36 @@
+/* Registration.css */
+
+/* Base color variables */
+:root {
+  --accent-cyan: #00c7e5; /* Main bright accent */
+  --accent-blue: #071567; /* The solid dark blue card background */
+  --button-start-light: #4dd0e1; /* Light gradient start for button */
+}
+
+/* --- GLASSMORPHISM CARD --- */
+.glass {
+  background-color: var(--accent-blue);
+  backdrop-filter: blur(5px); /* Subtle glass effect */
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Slightly brighter border */
+  box-shadow: 0 15px 40px 0 rgba(0, 0, 0, 0.5); /* Shadow for lift */
+  transition: all 0.3s ease;
+}
+
+/* --- INPUT FIELDS --- */
+.glass-input {
+  background-color: rgba(255, 255, 255, 0.95); /* Nearly opaque white for readability */
+  color: #1f2937; 
+  box-shadow: 0 0 0 0 transparent; /* Reset shadow */
+  transition: box-shadow 0.3s ease;
+}
+
+.glass-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px var(--accent-cyan); /* Cyan focus ring */
+}
+
+/* --- TEXT COLOR --- */
+.glass-text-light {
+  color: #FFFFFF;
+}

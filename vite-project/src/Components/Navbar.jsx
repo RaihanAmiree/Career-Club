@@ -9,7 +9,7 @@ const Navbar = () => {
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
     { name: "Services", path: "/services" },
-    { name: "Contact", path: "/contact" },
+    { name: "Career    Explorer", path: "/explorer" },
   ];
 
   return (
@@ -44,9 +44,12 @@ const Navbar = () => {
 
         {/* Right: Button + Hamburger */}
         <div className="flex items-center space-x-4">
-          <button className="px-5 py-2 bg-gradient-to-r from-purple-600 to-blue-500 text-white font-semibold rounded-lg hover:from-purple-500 hover:to-blue-400 transition duration-200">
-            Get a Quote
+          <Link to='/registration'>
+           <button className="px-5 py-2 bg-gradient-to-r from-purple-600 to-blue-500 text-white font-semibold rounded-lg hover:from-purple-500 hover:to-blue-400 transition duration-200">
+            Sign In
           </button>
+          </Link>
+         
 
           <button
             className="md:hidden text-white"
